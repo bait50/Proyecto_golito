@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth</title>
+  <link rel="stylesheet" href="CSS/auth.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button id="loginTab" class="active">Iniciar Sesión</button>
+      <button id="registerTab">Registrarse</button>
+    </div>
+    <div id="loginForm" class="form active">
+      <h2>Inicio de Sesión</h2>
+      <form data-parsley-validate>
+        <label for="loginEmail">Correo Electrónico</label>
+        <input type="email" id="loginEmail" required>
+        <label for="loginPassword">Contraseña</label>
+        <input type="password" id="loginPassword" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+    <div id="registerForm" class="form">
+      <h2>Registro</h2>
+      <form data-parsley-validate>
+        <label for="registerName">Nombre</label>
+        <input type="text" id="registerName" required>
+        <label for="registerEmail">Correo</label>
+        <input type="email" id="registerEmail" required>
+        <label for="registerPassword">Contraseña</label>
+        <input type="password" id="registerPassword" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+  <script src="JS/auth.js"></script>
+</body>
+</html>
